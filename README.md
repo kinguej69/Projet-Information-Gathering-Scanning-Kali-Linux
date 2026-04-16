@@ -9,12 +9,15 @@
 📌 Étapes pratiques
 1. Information Gathering (Reconnaissance OSINT)
 - Whois / Nslookup / Dig
+  
 whois ecobank.com
 
 nslookup ecobank.com
-dig ecobank.com ANY
+
+dig ecobank.com 
 
 - theHarvester (emails, sous-domaines, hôtes)
+  
 theHarvester -d example.com -l 200 -b google
 
 - Shodan (via API)
@@ -27,12 +30,15 @@ shodan search apache
 nmap -sS -sV -O -p- example.com
 
 - Masscan (scan rapide de grandes plages IP)
+  
 masscan 192.168.1.0/24 -p80,443 --rate=1000
 
 - Nikto (scan vulnérabilités web)
+  
 nikto -h http://example.com
 
 - Enum4linux (énumération SMB)
+  
 enum4linux -a 192.168.1.10
 
 3. Analyse & Reporting
