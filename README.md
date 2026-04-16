@@ -1,9 +1,10 @@
 # Projet-Information-Gathering-Scanning-Kali-Linux
 
 🔎 Projet : Information Gathering & Scanning – Kali Linux
+
 🎯 Objectifs
 - Démontrer la maîtrise des outils Kali Linux pour la phase de reconnaissance et de scanning.
-- Créer un projet reproductible et documenté pour ton portfolio GitHub.
+- Créer un projet reproductible et documenté.
 - Illustrer un workflow complet : Reconnaissance → Scanning → Reporting.
 
 📌 Étapes pratiques
@@ -18,7 +19,7 @@ dig ecobank.com
 
 - theHarvester (emails, sous-domaines, hôtes)
   
-theHarvester -d example.com -l 200 -b google
+theHarvester -d ecobank.com -l 200 -b google
 
 - Shodan (via API)
 shodan search apache
@@ -35,7 +36,7 @@ masscan 192.168.1.0/24 -p80,443 --rate=1000
 
 - Nikto (scan vulnérabilités web)
   
-nikto -h http://example.com
+nikto -h https://ecobank.com
 
 - Enum4linux (énumération SMB)
   
@@ -44,7 +45,7 @@ enum4linux -a 192.168.1.10
 3. Analyse & Reporting
 - Corrélation des résultats (services critiques, versions vulnérables).
 - Export des résultats en XML/JSON/CSV :
-nmap -sV -oX scan_results.xml example.com
+nmap -sV -oX scan_results.xml ecobank.com
 
 ✨ Valeur ajoutée
 - Montre ta maîtrise des outils Kali Linux (Nmap, Masscan, Nikto, theHarvester, Enum4linux, Maltego).
